@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Faculty+Glyphic&display=swap"
+        rel="stylesheet">
+    <title>Nothing new </title>
+</head>
+
+<body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="menu">
+                <img class="logo" src="img/logo.svg" alt="Marie Johne logo">
+                <button class="hamburger">
+                    <img class="menuIcon" src="img/menu.svg" alt="menu icon">
+                    <img class="closeIcon" src="img/close.svg" alt="close icon">
+                </button>
+            </div>
+            <ul class="nav-links">
+                <li><a class="linkItem" href="index.html#home">Home</a></li>
+                <li><a class="linkItem" href="index.html#movie_section">Movies</a></li>
+                <li><a class="linkItem" href="index.html#song_section">Songs</a></li>
+                <li><a class="linkItem" href="index.html#about_me_section">About me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" class="details">
+        <div class="album">
+            <img class="cover" src="img/red.png" alt="'Nothing new' album cover">
+            <div class="music_player">
+                <iframe src="https://www.youtube.com/embed/hA5QN7XRZgk?si=0xgsEsfP6SCH8t8a" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="main_text">
+                <h1>Nothing new</h1>
+                <p>Taylor Swift</p>
+            </div>
+            <div class="desc_1">
+                <h2>Album</h2>
+                <p>Red (Taylor’s Version)</p>
+            </div>
+            <div class="desc_2">
+                <h2>Genre</h2>
+                <p>Pop, Folk, Alternative</p>
+            </div>
+            <div class="desc_3">
+                <h2>What I Have Learned</h2>
+                <p>Nothing New by Taylor Swift, featuring Phoebe Bridgers, is a deeply reflective and poignant track from Red (Taylor’s Version). The song explores the anxieties of growing up, grappling with change, and the fear of becoming irrelevant. Its soft, melancholic melodies paired with introspective lyrics create an intimate atmosphere that resonates with listeners. The duet format allows Swift and Bridgers to deliver a heart-wrenching portrayal of vulnerability and self-doubt, emphasizing themes of impermanence, longing, and self-awareness. The track beautifully encapsulates the struggles of navigating life’s transitions and emotional complexities.</p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <p>&copy; <span id="year"></span> Marie Nurdaulet, All Rights Reserved, or at least I think they are. \•_•/
+            </p>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

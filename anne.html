@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Faculty+Glyphic&display=swap"
+        rel="stylesheet">
+    <title>Anne with an E</title>
+</head>
+
+<body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="menu">
+                <img class="logo" src="img/logo.svg" alt="Marie Johne logo">
+                <button class="hamburger">
+                    <img class="menuIcon" src="img/menu.svg" alt="menu icon">
+                    <img class="closeIcon" src="img/close.svg" alt="close icon">
+                </button>
+            </div>
+            <ul class="nav-links">
+                <li><a class="linkItem" href="index.html#home">Home</a></li>
+                <li><a class="linkItem" href="index.html#movie_section">Movies</a></li>
+                <li><a class="linkItem" href="index.html#song_section">Songs</a></li>
+                <li><a class="linkItem" href="index.html#about_me_section">About me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" class="details">
+        <div class="slideshow">
+            <img class="mySlides" src="img/anne.png" alt="1 scene from the movie">
+            <img class="mySlides" src="img/anne_2.png" alt="2 scene from the movie">
+            <img class="mySlides" src="img/anne_3.png" alt="3 scene from the movie">
+
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+
+        <div class="content">
+            <div class="main_text">
+                <h1>Anne with an E</h1>
+                <p>Released May 12, 2017</p>
+            </div>
+            <div class="desc_1">
+                <h2>Stars</h2>
+                <p>Amybeth McNulty, Geraldine James, R.H. Thomson, Dalila Bela, Lucas Jade Zumann</p>
+            </div>
+            <div class="desc_2">
+                <h2>Genre</h2>
+                <p>Period drama, coming-of-age, family</p>
+            </div>
+            <div class="desc_3">
+                <h2>What I Have Learned</h2>
+                <p>Anne with an E showcases the power of imagination and resilience in the face of adversity. It emphasizes the importance of belonging and love while challenging societal norms around feminism and equality. The series also highlights the value of friendship and loyalty, portraying relationships that inspire and support personal growth..</p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <p>&copy; <span id="year"></span> Marie Nurdaulet, All Rights Reserved, or at least I think they are. \•_•/
+            </p>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

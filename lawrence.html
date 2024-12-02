@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Faculty+Glyphic&display=swap"
+        rel="stylesheet">
+    <title>Merry Christmas, Mr. Lawrence </title>
+</head>
+
+<body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="menu">
+                <img class="logo" src="img/logo.svg" alt="Marie Johne logo">
+                <button class="hamburger">
+                    <img class="menuIcon" src="img/menu.svg" alt="menu icon">
+                    <img class="closeIcon" src="img/close.svg" alt="close icon">
+                </button>
+            </div>
+            <ul class="nav-links">
+                <li><a class="linkItem" href="index.html#home">Home</a></li>
+                <li><a class="linkItem" href="index.html#movie_section">Movies</a></li>
+                <li><a class="linkItem" href="index.html#song_section">Songs</a></li>
+                <li><a class="linkItem" href="index.html#about_me_section">About me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" class="details">
+        <div class="album">
+            <img class="cover" src="img/lawrence.png" alt="'Merry Christmas, Mr. Lawrence' album cover">
+            <div class="music_player">
+                <iframe src="https://www.youtube.com/embed/1OZDaRhHHyM?si=NSx5SW1Ku-hG3M55" title="YouTube video player"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="main_text">
+                <h1>Merry Christmas, Mr. Lawrence</h1>
+                <p>Ryuichi Sakamoto</p>
+            </div>
+            <div class="desc_1">
+                <h2>Album</h2>
+                <p>The Merry Christmas Mr. Lawrence (Original Soundtrack)</p>
+            </div>
+            <div class="desc_2">
+                <h2>Genre</h2>
+                <p>Classical, Soundtrack, Jazz</p>
+            </div>
+            <div class="desc_3">
+                <h2>What I Have Learned</h2>
+                <p>"Merry Christmas, Mr. Lawrence" by Ryuichi Sakamoto is a poignant and evocative instrumental piece that blends classical and traditional Japanese music with Western influences. Originally composed for the 1983 film of the same name, the track captures the tension, longing, and emotional depth of the film’s narrative, which deals with themes of war, cultural differences, and personal conflict. Sakamoto’s masterful use of the piano, paired with subtle electronic elements, creates a haunting melody that resonates with a sense of bittersweet melancholy. The piece reflects the inner emotional struggles of the characters while also conveying a deep sense of humanity, making it a timeless reflection on the complexity of relationships during turbulent times. The delicate balance between delicate, somber tones and more forceful, stirring passages invites listeners to explore a range of emotions, from sorrow to reflection to hope.</p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <p>&copy; <span id="year"></span> Marie Nurdaulet, All Rights Reserved, or at least I think they are. \•_•/
+            </p>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

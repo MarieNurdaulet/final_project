@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Faculty+Glyphic&display=swap"
+        rel="stylesheet">
+    <title>This is me trying </title>
+</head>
+
+<body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="menu">
+                <img class="logo" src="img/logo.svg" alt="Marie Johne logo">
+                <button class="hamburger">
+                    <img class="menuIcon" src="img/menu.svg" alt="menu icon">
+                    <img class="closeIcon" src="img/close.svg" alt="close icon">
+                </button>
+            </div>
+            <ul class="nav-links">
+                <li><a class="linkItem" href="index.html#home">Home</a></li>
+                <li><a class="linkItem" href="index.html#movie_section">Movies</a></li>
+                <li><a class="linkItem" href="index.html#song_section">Songs</a></li>
+                <li><a class="linkItem" href="index.html#about_me_section">About me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" class="details">
+        <div class="album">
+            <img class="cover" src="img/folklore.png" alt="'This is me trying' album cover">
+            <div class="music_player">
+                <iframe src="https://www.youtube.com/embed/jZtc7Hi7Hpw?si=cO_XQFgGYecUk3wr" title="YouTube video player"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="main_text">
+                <h1>Nothing New</h1>
+                <p>Taylor Swift</p>
+            </div>
+            <div class="desc_1">
+                <h2>Album</h2>
+                <p>Folklore</p>
+            </div>
+            <div class="desc_2">
+                <h2>Genre</h2>
+                <p>Indie Folk, Alternative Rock, Country</p>
+            </div>
+            <div class="desc_3">
+                <h2>What I Have Learned</h2>
+                <p>"This Is Me Trying" by Taylor Swift is a deeply introspective song that captures themes of
+                    self-doubt, vulnerability, and personal struggle. It expresses the emotional complexity of
+                    attempting to make progress while grappling with one’s own imperfections. Through soft,
+                    contemplative vocals, Swift paints a portrait of someone who is trying to do better but feels
+                    they’re falling short. The song beautifully explores the feeling of giving your best while
+                    questioning if it's enough, and how trying can feel both exhausting and liberating. The hauntingly
+                    sparse instrumentation adds to the sense of isolation, allowing listeners to connect deeply with the
+                    raw emotion in the lyrics. Swift’s ability to articulate the nuances of self-acceptance and the
+                    challenge of personal growth resonates with many who have faced similar struggles.</p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <p>&copy; <span id="year"></span> Marie Nurdaulet, All Rights Reserved, or at least I think they are. \•_•/
+            </p>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
